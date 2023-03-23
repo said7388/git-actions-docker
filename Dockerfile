@@ -1,5 +1,7 @@
 FROM node:18-alpine
 
-RUN node index.js
+WORKDIR /app
 
-# CMD ["node index.js"]
+COPY . .
+
+CMD ["node", "index.js"]
