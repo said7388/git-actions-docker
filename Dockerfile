@@ -1,2 +1,3 @@
-FROM alpine:3.17.2
-CMD ["echo", "Hello World!"]
+FROM node:18-alpine
+
+RUN console.log("Hello world")
